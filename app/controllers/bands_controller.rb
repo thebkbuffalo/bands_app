@@ -1,4 +1,8 @@
 class BandsController < ApplicationController
+
+  # Not gonna lie to you Travis.  I fell asleep last night, way earlier then I planned.
+  # I have no excuse for not getting this one done.  I just passed out much earlier then I wanted to,
+  # and unfortunately thi is all that I got done while I was awake.  
   def index
     @bands = Band.all
   end
