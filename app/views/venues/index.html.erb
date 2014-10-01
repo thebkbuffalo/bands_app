@@ -1,0 +1,10 @@
+Venues!
+</br></br>
+<%= link_to('Add A New Event', new_event_path) %>
+</br></br>
+<% @venues.each do |venue| %>
+  <%= venue.name %>,
+  <%= venue.city %>,
+  <%= venue.state %>
+  <%= venue.family_friendly %></br>
+<% end %>

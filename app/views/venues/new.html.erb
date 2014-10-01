@@ -1,0 +1,14 @@
+Add A New Venue!
+
+<%= form_for @venue do |f| %>
+  <%= f.label :name %><br/>
+  <%= f.text_field :name %><br/>
+  <%= f.label :city %><br/>
+  <%= f.text_field :city %><br/>
+  <%= f.label :state %><br/>
+  <%= f.text_field :state %><br/>
+  <%= f.label :family_friendly %><br/>
+  <%= f.radio_button :family_friendly, :true %>True<br/>
+  <%= f.radio_button :family_friendly, :false %>False<br/>
+  <%= f.submit %>
+<% end %>
